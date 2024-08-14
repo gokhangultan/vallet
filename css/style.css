@@ -77,8 +77,8 @@ body {
   }
   
   .carousel-indicators2 .active {
-    background-color: white; /* Aktif daire rengini belirleyin */
-    opacity: 1; /* Aktif dairede tam opaklık */
+    background-color: white; 
+    opacity: 1; 
   }
 
   .form-check-input2:checked {
@@ -88,3 +88,145 @@ body {
   .payment-selection:checked {
      background-color:black !important;
   }
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container .checkbox-text {
+  padding-left: 30px;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background-color: white; 
+  border-radius: 8px;
+  border: 1px gray solid;
+}
+
+.container:hover input ~ .checkmark-circle .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark-circle .checkmark {
+  background-color: #1988F0;
+}
+
+.container input:checked ~ .checkmark-circle {
+  background-color: white;
+}
+
+.container:has(input:checked)  {
+  background-color: white;
+  font-weight: bold;
+}
+.blue-line {
+  position: absolute;
+  left: -23px;
+  top: 0px;
+}
+
+.container:has(input:checked) .blue-line {
+  height: 100%;
+  width: 0;
+  border: 1px #1988F0 solid;
+}
+
+.container:has(input:checked) .checkbox-icon  {
+  color:#1988F0;
+}
+
+.checkmark-circle:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.container input:checked ~ .checkmark-circle .checkmark:after {
+  display: block;
+}
+
+.container input:checked ~ .checkmark-circle::after {
+  display: block;
+}
+
+.container .checkmark-circle .checkmark:after {
+  left: 45%;
+  top: 35%;
+  width: 4px;
+  height: 7px;
+  border: solid #1988F0;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 20;
+}
+.container .checkmark-circle::after {
+  left: 15px;
+  top: 15px;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 100%;
+  z-index: 10;
+}
+
+.container .checkmark-circle{
+  background-color: black;
+}
+
+.form-floating-label-disabled-color {
+  color: #1988F0 !important;
+}
+
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+  color: #0083FF;
+}
+
+.form-floating>label {
+ color: #8991A4; 
+ font-family:'Hellix', sans-serif;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 16px;
+}
+
+.form-floating>.form-control-plaintext:focus, .form-floating>.form-control-plaintext:not(:placeholder-shown), .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+color: #0C1E3D;
+}
+.form-floating {
+padding-right: 10px;
+}
+
+.form-floating>.form-control, .form-floating>.form-control-plaintext {
+  padding: 1rem 4.75rem;
+}
