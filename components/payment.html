@@ -4,7 +4,7 @@
         <h2 class="text-[#626C85] font-semibold leading-6 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet pellentesque metus sed venenatis.</h2>
         <div class="flex flex-col gap-2 payment-selection">
             <label class="flex items-center gap-2 cursor-pointer container">
-              <input type="radio" name="something" class="form-check-input rounded-full checked:bg-[#0083FF] border-gray-300 focus:ring-[#0083FF]">
+              <input type="radio" name="something" value="credit_card" class="form-check-input rounded-full checked:bg-[#0083FF] border-gray-300 focus:ring-[#0083FF]" checked >
               <span class="text-[#626C85] checkbox-text">Kredi Kartı ile Ödeme yap</span>
               <span class="checkmark-circle">
                 <span class="checkmark"></span>
@@ -13,7 +13,7 @@
               <span class="checkbox-icon ml-auto text-[#0C1E3D]"><i class="fa-regular fa-credit-card"></i></span>
             </label>
             <label class="flex items-center gap-2 cursor-pointer container">
-              <input type="radio" name="something" class="form-check-input rounded-full checked:bg-blue-500 border-gray-300 focus:ring-blue-500">
+              <input type="radio" name="something" value="bank_transfer" class="form-check-input rounded-full checked:bg-blue-500 border-gray-300 focus:ring-blue-500">
               <span class="text-[#626C85] checkbox-text">Havale / EFT ile ödeme yap</span>
                <span class="checkmark-circle">
                 <span class="checkmark"></span>
@@ -22,7 +22,7 @@
               <span class="checkbox-icon ml-auto text-[#0C1E3D]"><i class="fa-solid fa-repeat"></i></span>
             </label>
             <label class="flex items-center gap-2 cursor-pointer container">
-              <input type="radio" name="something" class="form-check-input rounded-full checked:bg-blue-500 border-gray-300 focus:ring-blue-500">
+              <input type="radio" name="something" value="mobile_payment" class="form-check-input rounded-full checked:bg-blue-500 border-gray-300 focus:ring-blue-500">
               <span class="text-[#626C85] checkbox-text">Mobil Ödeme ile ödeme yap</span>
                <span class="checkmark-circle">
                 <span class="checkmark"></span>
@@ -57,4 +57,11 @@
             </div>
         </div>
     </div>
+    <div class="flex justify-center">
+    <button class="bg-[#0083FF] py-3 px-4 rounded-2xl text-white">
+        <span class="px-12 font-semibold leading-4 text-base">Ödemeyi Tamamla - 720.00₺</span>
+    </button>
 </div>
+</div>
+
+

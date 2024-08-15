@@ -1,27 +1,32 @@
 <div>
-    <div class="dropdown bg-white rounded-2xl">
-        <div class="flex justify-between gap-2">
-          <h1 class="text-[#0C1E3D]  p-4 leading-6 font-semibold items-center justify-center align-middle"> 
-            Ödeme yada Satıcı<br>
-            ile İlgili Sorunun mu var ?</h1> 
-        <form class="dropdown-menu p-10">
-          <div class="mb-2">
-            <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
-          </div>
-          <div class="form-floating mb-3">
-            <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">Your Question</label>
-          </div>
-          
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        <div class="flex justify-end p-4" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-            <button type="button" class="btn text-[#0C1E3D] text-left leading-6 font-semibold">
-                <img src="img/arrow-down.svg" alt="Logo" class="mx-auto ">
-            </button>
+    <div class="accordion accordion-flush bg-white rounded-2xl" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <h1 class="text-[#0C1E3D] leading-6 font-semibold items-center justify-center align-middle"> 
+              Ödeme yada Satıcı<br>
+              ile İlgili Sorunun mu var ?</h1> 
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Ödeme yaparken bir sorun yaşıyorsanız aşağıdaki iletişim ağlarından bize ulaşın. Eğer satıcı ile ilgili şüpheleriniz varsa bildiriniz. <br><br> Sorunlarınız için bizimle iletişime geçerken ödeme kodunuzu yada sipariş numaranızı bize iletin</div>
+          <div class="flex flex-col gap-2 mx-2 px-2">
+          <h3 class="text-[#0C1E3D] font-bold leading-6">Ödeme Kodu: <span class="text-[#0083FF] font-bold leading-6"> TL6GJZZJH4</span></h3>
+          <h3 class="text-[#0C1E3D] font-bold leading-6">Sipariş Numarası: <span class="text-[#0083FF] font-bold leading-6"> 1843427</span></h3>
         </div>
-    </div>
+          <div class="flex flex-col gap-3 mx-2 px-2 mt-3">
+            <div class="flex flex-row gap-2 ">
+              <button class="border-1 border-[#D6DAE9] rounded-xl py-2 px-4 text-[#0C1E3D] text-sm font-semibold leading-4 flex flex-[1_1_49.9%] ">
+                <i class="fa-solid fa-envelope-open-text border-1,5 border-[#0083FF] px-2" style="color: #0083FF;"></i>E-Posta Gönder
+              </button>
+              <button class="border-1 border-[#D6DAE9] rounded-xl py-2 px-4 text-[#0C1E3D] text-sm font-semibold leading-4 flex flex-[1_1_49.9%]">
+                <i class="fa-solid fa-phone-volume border-1,5 border-[#0083FF] px-2" style="color: #0083FF;"></i>Çağrı Merkezi
+              </button>
+            </div>
+            <button class="text-white bg-[#2DA26E] rounded-2xl py-2 mb-2"><i class="fa-solid fa-headset pr-2" style="color: #FFFFFF;"></i>Canlı Destek</button>
+          </div>
+
+        </div>
       </div>
-      
+    </div>
 </div>

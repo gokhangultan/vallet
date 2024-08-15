@@ -1,0 +1,122 @@
+<div class="flex flex-col gap-4 p-4 ">
+    <section class="payment-methods">
+    <div class="bg-[#E7F0F2] flex flex-col gap-3 p-4 rounded-2xl">
+        <h1 class="text-[#0C1E3D] font-semibold text-lg leading-6">Ödeme Yöntemi seçin</h1>
+        <h2 class="text-[#626C85] font-semibold leading-6 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet pellentesque metus sed venenatis.</h2>
+        <div class="flex flex-col gap-2 payment-selection">
+            <label class="flex items-center gap-2 cursor-pointer container">
+              <input type="radio" name="something" value="credit_card" class="form-check-input rounded-full checked:bg-[#0083FF] border-gray-300 focus:ring-[#0083FF]" >
+              <span class="text-[#626C85] checkbox-text">Kredi Kartı ile Ödeme yap</span>
+              <span class="checkmark-circle">
+                <span class="checkmark"></span>
+              </span>
+              <span class="blue-line"></span>
+              <span class="checkbox-icon ml-auto text-[#0C1E3D]"><i class="fa-regular fa-credit-card"></i></span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer container">
+              <input type="radio" name="something" value="bank_transfer" class="form-check-input rounded-full checked:bg-blue-500 border-gray-300 focus:ring-blue-500" checked>
+              <span class="text-[#626C85] checkbox-text">Havale / EFT ile ödeme yap</span>
+               <span class="checkmark-circle">
+                <span class="checkmark"></span>
+              </span>
+              <span class="blue-line"></span>
+              <span class="checkbox-icon ml-auto text-[#0C1E3D]"><i class="fa-solid fa-repeat"></i></span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer container">
+              <input type="radio" name="something" value="mobile_payment" class="form-check-input rounded-full checked:bg-blue-500 border-gray-300 focus:ring-blue-500">
+              <span class="text-[#626C85] checkbox-text">Mobil Ödeme ile ödeme yap</span>
+               <span class="checkmark-circle">
+                <span class="checkmark"></span>
+              </span>
+              <span class="blue-line"></span>
+              <span class="checkbox-icon ml-auto text-[#0C1E3D]"><i class="fa-solid fa-mobile-button"></i></span>
+            </label>
+          </div>
+    </div>
+    </section>
+   <section class="warning">
+    <div class="flex gap-2 ">
+        <div class="text-center bg-[#E8EEFB] rounded-2xl flex flex-col gap-4 p-4 flex-[1_1_33.3%] ">
+            <i class="fa-solid fa-triangle-exclamation fa-xl pr-2 border-1,5 border-[#0083FF] rounded-full" style="color: #0083FF;"></i>
+            <p class="text-[#626C85] font-semibold leading-4 text-xs">Önce IBAN adresine hesabınızdan para gönderin sonra aşağıdaki formdan bunu bildirin</p>
+        </div>
+        <div class="text-center bg-[#FFECEC] rounded-2xl flex flex-col gap-4 p-4 flex-[1_1_33.3%] ">
+            <i class="fa-solid fa-triangle-exclamation fa-xl pr-2 border-1,5 border-[#FE3E3E] rounded-3xl" style="color: #FE3E3E;"></i>
+            <p class="text-[#626C85] font-semibold leading-4 text-xs"><span class="underline text-[#FE3E3E]">Sadece</span> bireysel ya da kurumsal size ait hesaplardan para transferi kabul edilir. Ödemeler otomatik olarak onaylanır.</p>
+        </div>
+        <div class="text-center bg-[#FFF5E7] rounded-2xl flex flex-col gap-4 p-4 flex-[1_1_33.3%] ">
+            <i class="fa-solid fa-triangle-exclamation fa-xl pr-2 border-1,5 border-[#E27245] rounded-3xl" style="color: #E27245;"></i>
+            <p class="text-[#E27245] font-semibold leading-4 text-xs">Önce IBAN adresine hesabınızdan para gönderin sonra aşağıdaki formdan bunu bildirin</p>
+        </div>
+    </div>
+    </section>
+    <section class="payment-info">
+    <h1 class="text-[#0C1E3D] font-semibold text-lg leading-6 mb-2">Tüm Bankalar Ortak IBAN 7/24 FAST</h1>
+    <div class="border-1 border-[#D6DAE9] rounded-2xl">
+        <div class="flex justify-between p-3">
+        <div class="flex flex-col gap-2">
+            <h3 class="text-[#626C85] text-xs leading-4 font-semibold">Hesap Adı</h3>
+            <h2 class="text-[#626C85] text-[15px] leading-4 font-semibold">VALLET ELEKTRONİK TİCARET ANONİM ŞİRKETİ</h2>
+        </div>
+        <button class="text-[#0083FF] bg-primary-10 rounded-lg py-2 px-3 text-xs">Kopyala</button>
+    </div>
+    <div class="flex justify-between border p-3">
+        <div class="flex flex-col gap-2">
+            <h3 class="text-[#626C85] text-xs leading-4 font-semibold">IBAN</h3>
+            <h2 class="text-[#626C85] text-[15px] leading-4 font-semibold">TR42 0006 7010 0000 0046 0169 18</h2>
+        </div>
+        <button class="text-[#0083FF] bg-primary-10 rounded-lg py-2 px-3 text-xs">Kopyala</button>
+    </div>
+    <div class="flex justify-between gap-2 ">
+        <div class="flex justify-between p-3 gap-2 flex-[1_1_49.9%]">
+            <div class="flex flex-col gap-1">
+                <h3 class="text-[#626C85] text-xs leading-4 font-semibold">Ödeme Açıklaması</h3>
+                <h2 class="text-[#626C85] text-[15px] leading-4 font-semibold">2254273</h2>
+            </div>
+            <button class="text-[#0083FF] bg-primary-10 rounded-lg py-2 px-3 text-xs">Kopyala</button>
+        </div>
+        <div class="flex justify-between p-3 gap-2 flex-[1_1_49.9%] ">
+            <div class="flex flex-col gap-1">
+                <h3 class="text-[#626C85] text-xs leading-4 font-semibold">Net Göndereceğiniz Tutar</h3>
+                <h2 class="text-[#626C85] text-[15px] leading-4 font-semibold">500,00₺</h2>
+            </div>
+            <button class="text-[#0083FF] bg-primary-10 rounded-lg py-2 px-3 text-xs">Kopyala</button>
+        </div>
+    </div>
+    </div>
+    </section>
+    <section class="payment-form">
+        <h1 class="text-[#0C1E3D] font-semibold text-lg leading-6 mb-2">Ödeme Bildirim Formu</h1>
+        <div class="flex flex-col gap-3">
+            <div class="flex gap-1 justify-between">
+                <div class="flex flex-col gap-1 p-2">
+                    <div class="form-floating mb-3 flex">
+                        <input type="text" class="form-control" id="userName" placeholder="John Doe">
+                        <label for="cardNumber">Ödeme Yapan Kişi</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="paymentDate" placeholder="DD/MM/YYYY">
+                        <label for="expiryDate">Ödeme Tarihi</label>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1 p-2">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="userId" placeholder="XXXXXXXXXXX">
+                        <label for="cardName">T.C. Kimlik Numaranız</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="amount" placeholder="123">
+                        <label for="securityCode">Net Gönderilecen Tutar</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="flex justify-center">
+        <button class="bg-[#0083FF] py-3 px-4 rounded-2xl text-white">
+        <span class="px-12 font-semibold leading-4 text-base">Ödemeyi Tamamla - 720.00₺</span>
+    </button>
+</div>
+</div>
+
+

@@ -1,10 +1,20 @@
-<div class="flex flex-col gap-4 p-4 ">
+<div class="flex flex-col gap-3 p-4 ">
     <div class="bg-[#E7F0F2] flex flex-col gap-3 px-6 lg:px-32 py-4 rounded-2xl">
         <div class="relative flex flex-col items-center gap-3 text-center">
             <img src="img/fail.svg" alt="Logo" class="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-[80%] z-10">
         <h1 class="text-[#0C1E3D] font-semibold text-lg leading-6 mt-3">Ödemeniz malesef alınamadı.</h1>
         <h2 class="text-[#626C85] font-semibold leading-6 text-sm">Alınan hata aşağıda belirtilmiştir. Lütfen satıcınıza aldığınız hatayı iletiniz.</h2>
         </div>
+        
     </div>
-   
+    <div class="alert alert-danger text-center" role="alert">
+        <h2 class="text-[#FE3E3E] leading-6 font-medium text-sm">Hata: Ödeme gerçekleşmedi.</h2>
+        <h2 class="text-[#FE3E3E] leading-6 font-medium text-sm">Kartınız bu işlem için yetkisiz. Lütfen bankanızla irtibata geçiniz.</h2>
+      </div>
+      <div class="flex justify-center">
+        <button class="bg-[#0C1E3D] py-3 px-4 rounded-2xl text-white">
+            <i class="fas fa-arrow-left text-sm"></i>
+            <span class="px-10 font-semibold leading-4 text-base">Ödeme Adımına Geri Dön</span>
+        </button>
+      </div>
 </div>
