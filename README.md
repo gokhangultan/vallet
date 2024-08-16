@@ -10,7 +10,7 @@ githubUsername: "gokhangultan"
 
 # Hey ! 👋
 
-### 🔗 <code><a href="https://vallet.vercel.app/" target="_blank"> Vercel Deployment </a></code>
+### 🔗 <code><a href="http://vallet.gokhangultan.com/" target="_blank"> Vercel Deployment </a></code>
 
 ## Getting Started 🖱️
 

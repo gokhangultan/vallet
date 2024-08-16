@@ -264,9 +264,15 @@ padding-right: 10px;
 .h2{
   font-family: 'HellixTRIAL-Regular', sans-serif !important;
 }
-
+.accordion{
+  border-radius: 1rem !important;
+}
 .accordion-item{
-  border-radius: 1.5rem !important;
+  border-radius: 1rem !important;
+}
+
+.accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
+  border-radius: 1rem !important;
 }
 
 .accordion-button:not(.collapsed) {
@@ -278,6 +284,7 @@ padding-right: 10px;
  font-weight: 500;
  font-size: 16px;
  line-height: 24px;
+ border-radius: 1.5rem !important;
 }
 
 .bg-primary-10 {
