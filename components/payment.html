@@ -1,16 +1,16 @@
 <div class="flex flex-col gap-4 p-4 ">
-    <div class="bg-[#E7F0F2] flex flex-col gap-3 p-4 rounded-2xl">
-        <h1 class="text-[#0C1E3D] font-semibold text-lg leading-6">Ödeme Yöntemi seçin</h1>
-        <h2 class="text-[#626C85] font-semibold leading-6 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet pellentesque metus sed venenatis.</h2>
+    <div class="bg-[#E7F0F2] dark:bg-[#01132F] flex flex-col gap-3 p-4 rounded-2xl">
+        <h1 class="text-[#0C1E3D] dark:text-white font-semibold text-lg leading-6">Ödeme Yöntemi seçin</h1>
+        <h2 class="text-[#626C85] dark:text-[#8991A4] font-semibold leading-6 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet pellentesque metus sed venenatis.</h2>
         <div class="flex flex-col gap-2 payment-selection">
             <label class="flex items-center gap-2 cursor-pointer container">
               <input type="radio" name="something" value="credit_card" class="form-check-input rounded-full checked:bg-[#0083FF] border-gray-300 focus:ring-[#0083FF]" checked >
-              <span class="text-[#626C85] checkbox-text">Kredi Kartı ile Ödeme yap</span>
+              <span class="text-[#626C85] dark:text-white checkbox-text">Kredi Kartı ile Ödeme yap</span>
               <span class="checkmark-circle">
                 <span class="checkmark"></span>
               </span>
               <span class="blue-line"></span>
-              <span class="checkbox-icon ml-auto text-[#0C1E3D]"><i class="fa-regular fa-credit-card"></i></span>
+              <span class="checkbox-icon ml-auto text-[#0C1E3D] dark:text-[#8891A4]"><i class="fa-regular fa-credit-card"></i></span>
             </label>
             <label class="flex items-center gap-2 cursor-pointer container">
               <input type="radio" name="something" value="bank_transfer" class="form-check-input rounded-full checked:bg-blue-500 border-gray-300 focus:ring-blue-500">
@@ -19,7 +19,7 @@
                 <span class="checkmark"></span>
               </span>
               <span class="blue-line"></span>
-              <span class="checkbox-icon ml-auto text-[#0C1E3D]"><i class="fa-solid fa-repeat"></i></span>
+              <span class="checkbox-icon ml-auto text-[#0C1E3D] dark:text-[#8891A4]"><i class="fa-solid fa-repeat"></i></span>
             </label>
             <label class="flex items-center gap-2 cursor-pointer container">
               <input type="radio" name="something" value="mobile_payment" class="form-check-input rounded-full checked:bg-blue-500 border-gray-300 focus:ring-blue-500">
@@ -28,13 +28,13 @@
                 <span class="checkmark"></span>
               </span>
               <span class="blue-line"></span>
-              <span class="checkbox-icon ml-auto text-[#0C1E3D]"><i class="fa-solid fa-mobile-button"></i></span>
+              <span class="checkbox-icon ml-auto text-[#0C1E3D] dark:text-[#8891A4]"><i class="fa-solid fa-mobile-button"></i></span>
             </label>
           </div>
     </div>
     <div class="flex flex-col gap-3">
-        <h1 class="text-[#0C1E3D] font-semibold text-lg leading-6">Kart Bilgilerinizi Ekleyin</h1>
-        <div class="flex gap-1 justify-between">
+        <h1 class="text-[#0C1E3D] dark:text-white font-semibold text-lg leading-6">Kart Bilgilerinizi Ekleyin</h1>
+        <div class="flex sm:flex-row flex-col gap-1 justify-between">
             <div class="flex flex-col gap-1 p-2">
                 <div class="form-floating mb-3 flex">
                     <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456">
@@ -48,7 +48,7 @@
             <div class="flex flex-col gap-1 p-2">
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="cardName" placeholder="Ad Soyad">
-                    <label for="cardName">Kart üzerindeki ad soyad</label>
+                    <label for="cardName" class="">Kart üzerindeki ad soyad</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="securityCode" placeholder="123">
@@ -59,7 +59,7 @@
     </div>
     <div class="flex justify-center">
     <button class="bg-[#0083FF] py-3 px-4 rounded-2xl text-white">
-        <span class="px-12 font-semibold leading-4 text-base">Ödemeyi Tamamla - 720.00₺</span>
+        <span class="px-2 sm:px-12 font-semibold leading-4 text-base">Ödemeyi Tamamla - 720.00₺</span>
     </button>
 </div>
 </div>

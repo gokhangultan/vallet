@@ -9,22 +9,22 @@
   .secondary-button {
     @apply rounded-lg py-2 px-3;
   }
-  }
+}
 
 body {
-    background-color: #E7F0F2 !important;
+    background-color: #E7F0F2;
     width: 100%; 
     height: 100%; 
     margin: 0; 
     padding: 0; 
-    font-family: 'Helix', sans-serif !important;
+    font-family: 'HellixTRIAL-Regular', sans-serif;
     
   }
   
 
   .main-container {
     width: 100%;
-}
+  }
 @media (min-width: 640px) {
     .main-container {
         max-width: 640px;
@@ -95,6 +95,8 @@ body {
      background-color:black !important;
   }
 
+
+
 .container {
   display: block;
   position: relative;
@@ -147,6 +149,8 @@ body {
   background-color: white;
   font-weight: bold;
 }
+
+
 .blue-line {
   position: absolute;
   left: -23px;
@@ -174,7 +178,6 @@ body {
   position: absolute;
   display: none;
 }
-
 
 .container input:checked ~ .checkmark-circle .checkmark:after {
   display: block;
@@ -211,23 +214,25 @@ body {
 }
 
 .form-floating-label-disabled-color {
-  color: #1988F0 !important;
+  color: #1988F0;
 }
-
+.form-floating > label::after {
+    background-color: transparent !important;
+}
 .form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
   color: #0083FF;
 }
 
 .form-floating>label {
  color: #8991A4; 
- font-family:'Hellix', sans-serif;
+ font-family:'HellixTRIAL-Regular', sans-serif;
  font-weight: 600;
  font-size: 14px;
  line-height: 16px;
 }
 
 .form-floating>.form-control-plaintext:focus, .form-floating>.form-control-plaintext:not(:placeholder-shown), .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
-color: #0C1E3D;
+  color: #0C1E3D;
 }
 .form-floating {
 padding-right: 10px;
@@ -257,7 +262,7 @@ padding-right: 10px;
 }
 
 .h2{
-  font-family: 'Hellix', sans-serif !important;
+  font-family: 'HellixTRIAL-Regular', sans-serif !important;
 }
 
 .accordion-item{
@@ -267,12 +272,9 @@ padding-right: 10px;
 .accordion-button:not(.collapsed) {
   background-color: white;
 }
-.accordion-button::after {
-  color: #1988F0;
-}
 .accordion-body {
   color: #626C85;
-  font-family:'Hellix', sans-serif !important;
+  font-family:'HellixTRIAL-Regular', sans-serif;
  font-weight: 500;
  font-size: 16px;
  line-height: 24px;
@@ -282,3 +284,32 @@ padding-right: 10px;
   background-color: rgba(0, 131, 255, 0.1); 
 }
 
+
+/*            *  *
+  *********************
+*/         
+
+label:has(input[name="mobile-payment-radio"]:checked) p {
+    color: #1988F0;
+}
+
+#phone::placeholder {
+  color: #8991A4;
+}
+
+@font-face {
+    font-family: 'HellixTRIAL-Regular';
+    src: url('/fonts/DP_hellix_TRIAL/HellixTRIAL-Regular.woff2') format('woff2'),
+         url('/fonts/DP_hellix_TRIAL/HellixTRIAL-Regular.woff') format('woff'),
+         url('/fonts/DP_hellix_TRIAL/HellixTRIAL-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231988F0'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.container-mobile{
+  background-color: transparent !important;
+}

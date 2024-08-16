@@ -10,13 +10,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Helix:wght@600&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="css/style.css">
-      </head>
-  <body >
-    <div class="main-container mx-auto">
+            <script>
+            tailwind.config = {
+                darkMode: 'class',
+                theme:{extend:{backgroundImage:{"white-arrow": `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")`}}}
+            }
+        </script>  
+    </head>
+  <body class="dark:bg-[#000D27]" >
+    <div class="main-container mx-auto md:p-0 p-4">
         <div id="header-placeholder" class="mb-4">Header</div>
         
-        <section class="flex flex-row gap-3">
-            <div class="flex flex-[1_1_66.6%] bg-white p-4 rounded-2xl h-1/2">
+        <section class="flex lg:flex-row flex-col gap-3">
+            <div class="flex flex-[1_1_66.6%] bg-[#fff] dark:bg-[#041838] p-4 rounded-2xl h-1/2">
                 <div id="failure-placeholder"></div>
             </div>
             
@@ -43,15 +49,81 @@
                 })
                 .catch(error => console.error(`Error loading ${selector}:`, error));
         };
+      const initializeDarkModeButton = () => {
+        var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+            document.documentElement.classList.add('dark');
+        } else {
+            themeToggleDarkIcon.classList.remove('hidden');
+            document.documentElement.classList.remove('dark');
+        }
+
+        var themeToggleBtn = document.getElementById('theme-toggle');
+
+        themeToggleBtn.addEventListener('click', function() {
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+      }
       
+        
+    (async function() {
         fetchContent('#header-placeholder', 'layouts/header.html');
         fetchContent('#faq-placeholder', 'components/faq.html');
         fetchContent('#card-placeholder', 'components/card.html');
         fetchContent('#failure-placeholder', 'components/failure.html');
         fetchContent('#slider-placeholder', 'components/slider.html');
         fetchContent('#footer-placeholder', 'layouts/footer.html');
-   
+        setTimeout(initializeDarkModeButton,500);
+      })();
         
     </script>
+        <style type="text/tailwindcss">
+        .container:has(input:checked)  {
+            @apply dark:bg-[#0E2140] 
+        }
+        .container:not(input:checked) .checkbox-text {
+            @apply dark:text-[#8991A4] 
+        }
+        .container:has(input:checked) .checkbox-text {
+            @apply dark:text-white
+        }
+        .accordion-button.collapsed::after {
+            @apply dark:bg-white-arrow
+        }
+        .form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+            @apply dark:text-[#0083FF];
+        }
+        .form-floating>label {
+            @apply dark:text-[#8991A4];
+        }
+        .form-floating>.form-control-plaintext:focus, .form-floating>.form-control-plaintext:not(:placeholder-shown), .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+            @apply dark:text-white
+        }
+        .form-control {
+            @apply dark:bg-transparent border-[#8991A4]
+        }
+    </style>
   </body>
 </html>
