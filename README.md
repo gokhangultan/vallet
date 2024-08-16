@@ -1,8 +1,8 @@
 ---
-ProjectName: Gokhan E-commerce
-Development Process Time: "2024-07-02 / 2024-07-03"
-spoiler: Dynamic With React & Spring
-FE, BE: ["React", "Spring"]
+ProjectName: Vallet Case
+Development Process Time: "2024-08-13 / 2024-08-16"
+spoiler: Figma --> JS & Html CSS
+FE, BE: ["Javascript", "HTML", "CSS", "Figma"]
 githubUsername: "gokhangultan"
 ---
 
@@ -14,9 +14,9 @@ githubUsername: "gokhangultan"
 
 ## Getting Started 🖱️
 
-To get started you can simply clone this `ecommerce-demo` repository and install the dependencies.
+To get started you can simply clone this `vallet` repository and install the dependencies.
 
-Clone the `gokhan-ecommerce` repository using git:
+Clone the `vallet` repository using git:
 
 ```bash
 git clone https://github.com/gokhangultan/vallet
